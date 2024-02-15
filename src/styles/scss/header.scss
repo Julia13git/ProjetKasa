@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    width: 100%;
+    //padding: 20px;
+    justify-content: space-between;
+    max-width: 1240px;
+    box-sizing: border-box;
+    @media (min-width: 1024px) {
+        //padding: 50px 100px;
+         
+    }
+& img {
+    width: 140px;
+    @media (min-width: 1024px) {
+        width: 210px;
+         
+    }
+}
+& nav {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+& a {
+    all: unset;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    @media (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 34px;
+
+
+         
+    }
+}
+}    
+}
