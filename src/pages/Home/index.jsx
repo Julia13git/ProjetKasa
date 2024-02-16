@@ -1,8 +1,13 @@
 import Banner from "../../components/Banner";
+import Cardlist from "../../components/Cardlist";
+
 
 function Home() {
     return (
-        <Banner />
+        <div className="home-maincontainer">
+            <Banner />
+            <Cardlist />
+        </div>
     )
 }
 

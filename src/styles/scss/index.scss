@@ -4,8 +4,10 @@
   
 body {
     margin: 0;
+    padding: 0;
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 h1{
   font-family: Montserrat, sans-serif;
@@ -19,5 +21,35 @@ h1{
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+}
+.home-maincontainer{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 20px;
+  margin: auto;
+  @media (min-width: 1024px) {
+    padding-inline: 100px;
+   }
+}
+.card-list{
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  @media (min-width: 1024px) {
+  background: #F6F6F6;
+  padding: 55px;
+  border-radius: 5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 55px;
+  margin-bottom: 50px;
+  }
 }
 
