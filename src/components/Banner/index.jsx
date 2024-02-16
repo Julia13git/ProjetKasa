@@ -10,7 +10,7 @@ function Banner(){
         
         </div>
         <div className='banner-text'>
-            <h1 className='banner-title'>Chez vous, <br/>partout et ailleurs</h1>
+            <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
         </div>
         
     </div>

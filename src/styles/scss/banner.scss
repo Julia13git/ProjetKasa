@@ -4,8 +4,11 @@
     width: 100%;
     max-width: 1240px;
     box-sizing: border-box; 
+    margin-inline: 20px;
+    
     @media (min-width: 1024px) {
-          
+        margin-inline: 100px;
+        justify-content: center;
     }
 }
 div .banner-img  {
@@ -13,8 +16,12 @@ div .banner-img  {
 & img{
     height: 111px;
     width: 100%;
+    //border: 1px solid #000000;
     border-radius: 10px;
     object-fit: cover; 
+    @media (min-width: 1024px) {
+     height: 223px;     
+    }
 }
 }
 .banner-cover{
@@ -24,20 +31,31 @@ div .banner-img  {
     position: absolute;
     background: black;
     opacity: 0.4;
+    @media (min-width: 1024px) {
+        height: 223px;     
+       }
 }
 div .banner-text{
     display: flex;
     border-radius: 10px;
-    width: 100%;
+    width: 76%;
     height: 111px;
-
     position: absolute;
     align-items: center;
-& .banner-title{
+    flex-wrap: wrap;
+    @media (min-width: 1024px) {
+        height: 223px; 
+        justify-content: center;    
+    }
+& .banner-title {
     position: absolute;
     color: white;
-    margin-inline: 20px;   
-}}
+    margin-inline: 20px;
+    @media (min-width: 1024px) {
+        font-size: 48px;
+        line-height: 68px;
+       }}
+}
 
 
 
