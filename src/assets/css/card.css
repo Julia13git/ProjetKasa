@@ -1,0 +1,32 @@
+.onecard {
+  display: flex;
+  height: 255px;
+  background: #FF6060 linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  align-items: flex-end;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .onecard {
+    width: 340px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+}
+.onecard .one-card-content {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px;
+  height: 52px;
+}
+.onecard h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: white;
+}
+
+/*# sourceMappingURL=card.css.map */

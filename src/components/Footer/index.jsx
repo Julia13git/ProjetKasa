@@ -3,9 +3,9 @@ import '../../styles/scss/footer.scss'
 function Footer() {
   return (
     <footer>
+        <img src='/images/logo.svg' alt='logo' />
         <div className='footer-content'>
-        <i className="fa-regular fa-copyright"></i>
-        <span>2020 Kasa.All rights reserved</span>
+          <span>© 2020 Kasa. All rights reserved</span>
         </div>
     </footer>
   )

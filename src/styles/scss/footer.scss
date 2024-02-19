@@ -3,15 +3,26 @@ footer {
     width: 100%;
     height: 210px;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: center;
+& img{
+    width: 122px;
+    height: 39px;
+    filter: brightness(0) invert(1);
+}  
 & .footer-content {
     width: 134px;
-    height: 50px;
-    text-align: center;
-}
-& .fa-copyright {
-    color: white;
+    //height: 46px;
+    display: flex;
+    justify-content: center;
+    gap:5px;    
+    @media (min-width: 1024px) {
+        width: 513px;
+        position: relative;
+        top: 40px;
+    }
 }
 & span {
     color: white;
@@ -19,6 +30,9 @@ footer {
     font-size: 12px;
     font-weight: 500;
     line-height: 17px;
+    @media (min-width: 1024px) {
+        font-size: 24px;
+    }
 }
 }
 
