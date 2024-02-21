@@ -1,16 +1,16 @@
 import '../../styles/scss/banner.scss'
+import React from 'react'
 
-function Banner(){
+function Banner({image, title}){
     return (    
     <div className='banner'>
         <div className='banner-img'>
-            <img src='/images/banner.png' alt='banner' />
+            <img src={image} alt='Banner' />
         </div>
         <div className='banner-cover'>
-        
         </div>
         <div className='banner-text'>
-            <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
+            <h1 className='banner-title'>{title}</h1>
         </div>
         
     </div>

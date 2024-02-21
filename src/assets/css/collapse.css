@@ -1,0 +1,50 @@
+.collapse-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .collapse-list {
+    justify-content: center;
+    padding: 50px 108px;
+  }
+}
+
+.one-collapse {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .one-collapse {
+    width: 1023px;
+  }
+}
+
+.collapse-btn {
+  width: 100%;
+  background: #FF6060;
+  border: none;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+@media (min-width: 1024px) {
+  .collapse-btn {
+    max-width: 1023px;
+    height: 54px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+/*# sourceMappingURL=collapse.css.map */

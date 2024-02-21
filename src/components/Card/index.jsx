@@ -1,7 +1,5 @@
 import '../../styles/scss/card.scss'
 import { Link } from 'react-router-dom'
-//import { housingList } from '../../datas/housingList'
-
 
 function Card({id, title, cover }) {
   return (
