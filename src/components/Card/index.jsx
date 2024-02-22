@@ -1,15 +1,15 @@
 import '../../styles/scss/card.scss'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
-function Card({id, title, cover }) {
+function Card({src, alt }) {
   return (
-      <Link to={''} key={id} className="onecard" >
-        <img src={cover} alt={title} />
+      <div  className="onecard" >
+        <img src={src} alt={alt} className='card-img'/>
         <div className='one-card-content'>
-          <h2>{title}</h2>
+          <h2>{alt}</h2>
         </div>
-      </Link>
+      </div>
   )
 }
 
-export default Card
+export default Card;

@@ -33,6 +33,7 @@ h1 {
   flex-direction: column;
   gap: 20px;
   padding-inline: 20px;
+  max-width: 1240px;
 }
 @media (min-width: 1024px) {
   .home-maincontainer {

@@ -1,0 +1,33 @@
+.housing-info{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.housing-title{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FF6060;
+    @media (min-width: 1024px) {  
+        font-size: 36px;
+        line-height: 51px;
+    }
+}
+.housing-location{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    @media (min-width: 1024px) {  
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+.tagstyle{
+    width: 84px;
+    height: 18px;
+    border-radius: 10px;
+    background: #FF6060;
+}
