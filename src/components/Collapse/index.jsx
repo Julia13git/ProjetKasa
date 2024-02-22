@@ -1,40 +1,36 @@
+import { useState } from "react";
 import '../../styles/scss/collapse.scss'
 
-const collapseTypes = [
-    {
-        title: "Fiabilité",
-        content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",
-    },
-    {
-        title: "Respect",
-        content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
-    },
-    {
-        title: "Service",
-        content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
-    },
-    {
-        title: "Sécurité",
-        content: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-    }
-]
 
-function Collapse() {
-    return (
-        <div className='collapse-list'>
-        {collapseTypes.map ((collapse) => (
-            <div className='one-collapse'>
-                <button type="button" className="collapse-btn" >
-                    {collapse.title} 
-                    <img src="/images/arrow-collapse.svg" alt="" />
-                </button>
-            <div className="collapse-content">
-                <p>{collapse.content}</p>
-            </div>
-            </div>
-            ))}
-            </div>
-            )
+export default function Collapse({title,content}){
+
+    const [collapseOpen, setCollapseOpen] = useState(true);
+
+    function handleClick(event){
+        setCollapseOpen(!collapseOpen);
+        const contentid = event.target.getAttribute("contentid");
+        //document.getElementById(contentid).style.display = (collapseOpen?"block":"none");
+        if (collapseOpen){
+            document.getElementById(contentid).classList.remove("hide-collapse-content");                         
+            document.getElementById(contentid).classList.add("show-collapse-content");        
+        } else {
+            document.getElementById(contentid).classList.remove("show-collapse-content");
+            document.getElementById(contentid).classList.add("hide-collapse-content");
         }
+    }
 
-export default Collapse;
+    return (
+    <div className='one-collapse' key={title}>
+        <button type="button" className="collapse-btn" >
+            {title} 
+            <img contentid={title} src={collapseOpen?"/images/arrow-collapse-up.svg":"/images/arrow-collapse-down.svg"}
+             alt=""  onClick={handleClick}/>
+        </button>
+        {/* if  collapseOpen { return "collapse-content"} else {"collapse-hidden"} */}
+        <div className="collapse-content hide-collapse-content" id={title}>
+            <p>{content}</p>
+        </div>
+    </div>  
+    )
+
+}

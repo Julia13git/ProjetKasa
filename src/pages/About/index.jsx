@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Banner from "../../components/Banner";
-import Collapse from "../../components/Collapse";
+import CollapseList from "../../components/CollapseList";
 
 
 function About ()  {
@@ -10,7 +10,7 @@ function About ()  {
       <Header />
       <div className="home-maincontainer">
       <Banner image="/images/banner-apropos.svg" title=""/> 
-      <Collapse />   
+      <CollapseList />   
       </div>
       <Footer />
       </>
