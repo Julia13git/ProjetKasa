@@ -25,9 +25,42 @@
         line-height: 26px;
     }
 }
+.tag-list{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    @media (min-width: 1024px) { 
+
+    }
+}
 .tagstyle{
-    width: 84px;
-    height: 18px;
+    border: transparent;
+    padding:5px 10px;
+    //max-width: 84px;
+    //height: 18px;
     border-radius: 10px;
     background: #FF6060;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    @media (min-width: 1024px) {  
+        //width: 115px;
+        padding: 10px 15px;
+        //height: 25px;
+        font-size: 14px;
+    }
+}
+.star{
+    width: 18px;
+    height: 18px;
+    @media (min-width: 1024px) {  
+    width: 36px;
+    height: 36px;
+    }
+}
+.star-red{
+    color: #FF6060;
+    filter: invert(#FF6060);
 }
