@@ -20,7 +20,7 @@ function Carousel({id}) {
                 };
 
                 return (
-                 <section className="carousel">                                                                                               
+                 <section className="carousel" key={housing.id}>                                                                                               
                     <img src={housing.pictures[currentImage]} alt=""/>
                     <p>{currentImage+1}/{pictures.length}</p>
                     <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
