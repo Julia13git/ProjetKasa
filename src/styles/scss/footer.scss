@@ -14,14 +14,16 @@ footer {
 }  
 & .footer-content {
     width: 134px;
-    //height: 46px;
+    height: 46px;
     display: flex;
     justify-content: center;
-    gap:5px;    
+    gap:5px;  
+    align-items: flex-end;  
+    text-align: center;
     @media (min-width: 1024px) {
         width: 513px;
         position: relative;
-        top: 40px;
+        top: 20px;
     }
 }
 & span {
@@ -30,6 +32,7 @@ footer {
     font-size: 12px;
     font-weight: 500;
     line-height: 17px;
+    padding-inline: 10px;
     @media (min-width: 1024px) {
         font-size: 24px;
     }

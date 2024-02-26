@@ -6,8 +6,8 @@ function Header() {
     <header>
       <img src='/images/logo.svg' alt='logo' className='kasa-logo' />
     <nav>
-      <Link to="/">ACCUEIL</Link>
-      <Link to="/about">A PROPOS</Link>
+      <Link to="/">Accueil</Link>
+      <Link to="/about">A Propos</Link>
     </nav>
     </header>
   )

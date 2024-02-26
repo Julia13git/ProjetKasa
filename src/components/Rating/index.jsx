@@ -2,33 +2,25 @@ import React from "react"
 import '../../styles/scss/housingitem.scss'
 
 function Rating({score}){
-
-     const ranges = [1, 2, 3, 4, 5]
+    const ranges = [1, 2, 3, 4, 5]
 
     return (
-        <div>
-            {ranges.map((range) => 
-            score >= range ? (
-                <img 
-                key={range.toString()}
-                className="star"
-                src="/images/red-rating-star.svg"
-                alt="star"
-              />
+        <div className="rating-block">
+            {ranges.map((range) => score >= range ? (
+                <div className="star-block">
+                    <img 
+                    key={range.toString()}
+                    className="star"
+                    src="/images/red-rating-star.svg"
+                    alt=""
+                />
+              </div>
             ) : (
-                <img src='/images/rating-star.svg' alt="" className="star"/>
+                <div className="star-block">
+                    <img src='/images/rating-star.svg' alt="" className="star"/>
+                </div>
             )
             )}
-            {/* <img src='/images/rating-star.svg' alt="" className="star"/>
-            <img src='/images/rating-star.svg' alt="" className="star"/>
-            <img src='/images/rating-star.svg' alt="" className="star"/>
-            <img src='/images/rating-star.svg' alt="" className="star"/>
-            <img src='/images/rating-star.svg' alt="" className="star"/>  */}
-            {/* <i class="fa-solid fa-star star"></i>
-            <i class="fa-solid fa-star star"></i>
-            <i class="fa-solid fa-star star"></i>
-            <i class="fa-solid fa-star star"></i>
-            <i class="fa-solid fa-star star"></i> */}
         </div>
     )
 }
