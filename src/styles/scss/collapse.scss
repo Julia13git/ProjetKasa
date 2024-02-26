@@ -54,6 +54,7 @@
     padding: 15px;
     background: #F6F6F6;
     border-radius: 0px 0px 10px 10px;
+    opacity: 0;
     display: none;  
     & p{
         font-family: Montserrat, sans-serif;
@@ -70,31 +71,45 @@
 
 .show-collapse-content { 
     display: flex;   
-    animation: show 0.5s forwards;
+    animation: show 0.5s ease-in forwards;
 }
 
 .hide-collapse-content {
-    animation: hide 0.5s forwards;
+     animation: hide 0.5s ease-out forwards;
+ }
+
+
+.rotate-down {
+
+     transition-duration: 0.3s;
+     transition-property: transform;
+    transform: rotate(-180deg);
+}
+
+.rotate-up {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: rotate(0deg);
 }
 
 @keyframes show {
     from {
-        transform: scale(0); /* Start with no scale */
+        display: none; /* Start with no scale */
         opacity: 0; /* Start with opacity 0 */
     }
     to {
-        transform: scale(1); /* Scale to 1 */
-         opacity: 1; /* Opacity 1 */
+        display:block; /* Scale to 1 */
+        opacity: 1; /* Opacity 1 */
         }
 }
 
-@keyframes hide {
+ @keyframes hide {
     from {
-        transform: scale(1); /* Scale to 1 */
-         opacity: 1; /* Opacity 1 */
+        display: block;
+        opacity: 1; /* Opacity 1 */
     }
     to {
-        transform: scale(0); /* Start with no scale */
+        display: none; /* Start with no scale */
         opacity: 0; /* Start with opacity 0 */
     }
 }

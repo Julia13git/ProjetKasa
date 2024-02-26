@@ -11,9 +11,14 @@ export default function Collapse({title,content,modeList}){
         const contentid = event.target.getAttribute("contentid");
         //document.getElementById(contentid).style.display = (collapseOpen?"block":"none");
         if (collapseOpen){
+            //event.target.style.transform = "rotate(180deg)";
+            event.target.classList.remove("rotate-up")
+            event.target.classList.add("rotate-down")
             document.getElementById(contentid).classList.remove("hide-collapse-content");                         
-            document.getElementById(contentid).classList.add("show-collapse-content");        
+            document.getElementById(contentid).classList.add("show-collapse-content");
         } else {
+            event.target.classList.remove("rotate-down")
+            event.target.classList.add("rotate-up")
             document.getElementById(contentid).classList.remove("show-collapse-content");
             document.getElementById(contentid).classList.add("hide-collapse-content");
         }
@@ -23,13 +28,13 @@ export default function Collapse({title,content,modeList}){
     <div className='one-collapse' key={title}>
         <button type="button" className="collapse-btn" >
             {title} 
-            <img contentid={title} src={collapseOpen?"/images/arrow-collapse-up.svg":"/images/arrow-collapse-down.svg"}
+            <img contentid={title} src="/images/arrow-collapse-up.svg"
              alt=""  onClick={handleClick}/>
         </button>
         {/* if  collapseOpen { return "collapse-content"} else {"collapse-hidden"} */}
         <div className="collapse-content hide-collapse-content" id={title}>
-        {modeList &&  <ul>{content.map((c) => {return (<p key={c}>{c}</p>)})}</ul>}
-        {!modeList && <p>{content}</p>}
+            {modeList &&  <ul>{content.map((c) => {return (<p key={c}>{c}</p>)})}</ul>}
+            {!modeList && <p>{content}</p>}
         </div>
     </div>  
     )
