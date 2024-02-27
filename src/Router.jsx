@@ -10,8 +10,9 @@ function Router(){
       <Routes>
         <Route path="/" element={<Home />}   />
         <Route path="/about" element={<About />} />
-        <Route path="/housing/:id" element={<HousingCard />} errorElement={<Error />}/> 
+        <Route path="/housing/:id" element={<HousingCard />} /> 
         <Route path="*" element={<Error />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </>
   )

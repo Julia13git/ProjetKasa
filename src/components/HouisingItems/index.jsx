@@ -5,11 +5,15 @@ import Tag from "../Tag"
 import Rating from "../Rating"
 import Host from "../Host"
 import Collapse from "../Collapse"
+import {Navigate} from "react-router-dom"
+
 
 function HousingItems({id}){
+    const isHouseFound = housingList.find(h=> h.id === id);
+       
        return (
         <>
-        {housingList.filter(housing => housing.id === id).map((housing, index) => {
+        {isHouseFound ? housingList.filter(housing => housing.id === id).map((housing, index) => {
             return (
                 <div key={index} >
                     <div className="card-layout">
@@ -39,7 +43,7 @@ function HousingItems({id}){
                     </div>
                 </div>
             )
-        })}
+        }):<Navigate replace to="/error"/>}
         </>
 )
 }

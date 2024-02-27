@@ -6,8 +6,8 @@ import Header from "../../components/Header";
 import Error from "../../components/Error";
 
 function PageError () {
-//     let error = useRouteError();
-//   console.error(error);
+     //let error = useRouteError();
+   //console.error(error);
     return (
         <>
         <Header />

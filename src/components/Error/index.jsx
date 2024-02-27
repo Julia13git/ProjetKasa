@@ -4,6 +4,7 @@ import "./error.scss"
 
 function Error () {
     return (
+        
         <section className='error-block'>
             <span>404</span>
 
