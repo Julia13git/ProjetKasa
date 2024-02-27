@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../../styles/scss/collapse.scss'
+import "./collapse.scss"
 
 
 export default function Collapse({title,content,modeList}){

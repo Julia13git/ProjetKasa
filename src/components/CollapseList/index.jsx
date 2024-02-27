@@ -1,4 +1,4 @@
-import '../../styles/scss/collapse.scss'
+import '../Collapse/collapse.scss'
 import Collapse from '../Collapse';
 
 const collapseTypes = [

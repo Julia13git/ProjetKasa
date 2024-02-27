@@ -1,5 +1,5 @@
 import React from "react"
-import '../../styles/scss/housingitem.scss'
+import './tag.scss'
 
 
 function Tag({tag}){

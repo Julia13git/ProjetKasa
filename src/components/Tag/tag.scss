@@ -1,0 +1,18 @@
+@import '../../styles/scss/variables.scss';
+
+.tagstyle{
+    border: transparent;
+    padding:5px 10px;
+    //max-width: 84px;
+    //height: 18px;
+    border-radius: 10px;
+    background: $primary;
+    color: $white;
+    @include text-10-700-14;
+        @media (min-width: 1024px) {  
+            //width: 115px;
+            padding: 10px 15px;
+            //height: 25px;
+            font-size: 14px;
+        }
+}

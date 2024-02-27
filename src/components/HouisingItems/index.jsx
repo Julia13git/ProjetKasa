@@ -1,6 +1,6 @@
 import React from "react"
 import { housingList } from "../../datas/housingList"
-import '../../styles/scss/housingitem.scss'
+import './housingitem.scss'
 import Tag from "../Tag"
 import Rating from "../Rating"
 import Host from "../Host"

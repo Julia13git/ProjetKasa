@@ -1,4 +1,4 @@
-import '../../styles/scss/host.scss'
+import './host.scss'
 
 function Host({src, name}) {
     return (

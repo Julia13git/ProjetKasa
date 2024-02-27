@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { housingList } from "../../datas/housingList"
-import '../../styles/scss/carousel.scss'
+import './carousel.scss'
 
 
 function Carousel({id}) {    

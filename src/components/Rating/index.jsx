@@ -1,5 +1,5 @@
 import React from "react"
-import '../../styles/scss/rating.scss'
+import './rating.scss'
 
 function Rating({score}){
     const ranges = [1, 2, 3, 4, 5]

@@ -1,7 +1,7 @@
 import React from 'react'
 import  { housingList } from '../../datas/housingList'
 import { Link } from 'react-router-dom'
-import '../../styles/scss/card.scss'
+import '../Card/card.scss'
 import Card from '../Card'
 
 function Cardlist() {
