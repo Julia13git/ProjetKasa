@@ -1,3 +1,5 @@
+@import 'variables';
+
 .card-layout{
     display: flex;
     flex-direction: column;
@@ -17,22 +19,16 @@
     gap: 10px;
 }
 .housing-title{
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #FF6060;
+    @include text-18-500-26;
+    color: $primary;
     @media (min-width: 1024px) {  
         font-size: 36px;
         line-height: 51px;
     }
 }
 .housing-location{
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    @media (min-width: 1024px) {  
+    @include text-14-500-20;
+        @media (min-width: 1024px) {  
         font-size: 18px;
         line-height: 26px;
     }
@@ -42,7 +38,6 @@
     gap: 10px;
     margin-bottom: 15px;
     @media (min-width: 1024px) { 
-
     }
 }
 .tagstyle{
@@ -51,40 +46,15 @@
     //max-width: 84px;
     //height: 18px;
     border-radius: 10px;
-    background: #FF6060;
-    color: white;
-    font-family: Montserrat, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 14px;
-    @media (min-width: 1024px) {  
-        //width: 115px;
-        padding: 10px 15px;
-        //height: 25px;
-        font-size: 14px;
-    }
-}
-.rating-block{
-    display: flex;
-}
-.star-block{
-    width: 18px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media (min-width: 1024px) {  
-        width: 36px;
-        height: 36px;
+    background: $primary;
+    color: $white;
+    @include text-10-700-14;
+        @media (min-width: 1024px) {  
+            //width: 115px;
+            padding: 10px 15px;
+            //height: 25px;
+            font-size: 14px;
         }
-}
-.star{
-    width: 13px;
-    height: 13px;
-    @media (min-width: 1024px) {  
-    width: 24px;
-    height: 24px;
-    }
 }
 
 .rating-host{
@@ -97,42 +67,7 @@
     align-items: flex-end;
     }
 }
-.host-block{
-    display: flex;
-    //width: 135.5px;
-    //height: 33px;
-    gap: 10px;
-    align-items: center;
-    & .host-image{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-    & img{
-        width: 32px;
-        height: 32px;
-        border-radius: 38px;
-        @media (min-width: 1024px) {  
-            width: 64px;
-            height: 64px;
-        }
-    } 
-    & .host-name{
-        width: min-content;
-        text-align: right;
-    }
-    & p{
-        color: #FF6060;
-        font-family: Montserrat, sans-serif;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 17px;
-        @media (min-width: 1024px) {  
-            font-size: 18px; 
-            line-height: 25px;
-        }
-    }   
-}
+
 .description-equipment{
     display: flex;
     flex-direction: column;

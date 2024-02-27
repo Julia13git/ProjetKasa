@@ -1,3 +1,4 @@
+/*Variables-colors*/
 .card-layout {
   display: flex;
   flex-direction: column;
@@ -58,7 +59,7 @@
   padding: 5px 10px;
   border-radius: 10px;
   background: #FF6060;
-  color: white;
+  color: #FFF;
   font-family: Montserrat, sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -68,35 +69,6 @@
   .tagstyle {
     padding: 10px 15px;
     font-size: 14px;
-  }
-}
-
-.rating-block {
-  display: flex;
-}
-
-.star-block {
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 1024px) {
-  .star-block {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-.star {
-  width: 13px;
-  height: 13px;
-}
-@media (min-width: 1024px) {
-  .star {
-    width: 24px;
-    height: 24px;
   }
 }
 
@@ -110,45 +82,6 @@
   .rating-host {
     flex-direction: column-reverse;
     align-items: flex-end;
-  }
-}
-
-.host-block {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.host-block .host-image {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-.host-block img {
-  width: 32px;
-  height: 32px;
-  border-radius: 38px;
-}
-@media (min-width: 1024px) {
-  .host-block img {
-    width: 64px;
-    height: 64px;
-  }
-}
-.host-block .host-name {
-  width: min-content;
-  text-align: right;
-}
-.host-block p {
-  color: #FF6060;
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 17px;
-}
-@media (min-width: 1024px) {
-  .host-block p {
-    font-size: 18px;
-    line-height: 25px;
   }
 }
 

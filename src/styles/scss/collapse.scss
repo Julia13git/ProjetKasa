@@ -1,3 +1,5 @@
+@import 'variables';
+
 .collapse-list{
     display: flex;
     flex-direction: column;
@@ -26,45 +28,37 @@
 }
 .collapse-btn{
     width: 100%;
-    background: #FF6060;
+    background: $primary;
     border: none;
     height: 30px;
-    color: white;
+    color: $white;
     cursor: pointer;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 19px;
+    @include text-13-700-19;
     @media (min-width: 1024px) {
         max-width: 1023px;
         height: 54px;
         font-size: 24px;
         line-height: 34px;
-        }
+    }
 }
 .collapse-content{
     max-width: 1015px;
     //width: 100%;
     display: flex;
     padding: 15px;
-    background: #F6F6F6;
+    background: $backgroundgrey;
     border-radius: 0px 0px 10px 10px;
     opacity: 0;
     display: none;  
     & p{
-        font-family: Montserrat, sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
+        @include text-14-500-17;
         @media (min-width: 1024px) {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 26px;
+            @include text-18-400-26;
         }
     }
 }
@@ -81,8 +75,8 @@
 
 .rotate-down {
 
-     transition-duration: 0.3s;
-     transition-property: transform;
+    transition-duration: 0.3s;
+    transition-property: transform;
     transform: rotate(-180deg);
 }
 

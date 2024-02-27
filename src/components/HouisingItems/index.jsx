@@ -26,7 +26,7 @@ function HousingItems({id}){
                         </div>
                         <div className="rating-host">
                             <div>
-                                <Rating score={housing.rating}/>
+                                <Rating  score={housing.rating} />
                             </div>
                             <div>
                                 <Host name={housing.host.name} src={housing.host.picture}/>

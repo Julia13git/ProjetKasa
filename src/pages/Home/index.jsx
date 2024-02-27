@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 function Home() {
     return (
         <>
-        <Header />
+        <Header isAccueilActive={true}/>
         <div className="home-maincontainer">
             <Banner image="/images/banner.png" title="Chez vous, partout et ailleurs"/>
             <Cardlist />

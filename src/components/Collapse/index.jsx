@@ -9,9 +9,7 @@ export default function Collapse({title,content,modeList}){
     function handleClick(event){
         setCollapseOpen(!collapseOpen);
         const contentid = event.target.getAttribute("contentid");
-        //document.getElementById(contentid).style.display = (collapseOpen?"block":"none");
         if (collapseOpen){
-            //event.target.style.transform = "rotate(180deg)";
             event.target.classList.remove("rotate-up")
             event.target.classList.add("rotate-down")
             document.getElementById(contentid).classList.remove("hide-collapse-content");                         

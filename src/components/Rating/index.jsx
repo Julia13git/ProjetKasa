@@ -1,22 +1,22 @@
 import React from "react"
-import '../../styles/scss/housingitem.scss'
+import '../../styles/scss/rating.scss'
 
 function Rating({score}){
     const ranges = [1, 2, 3, 4, 5]
 
     return (
-        <div className="rating-block">
-            {ranges.map((range) => score >= range ? (
-                <div className="star-block">
+        <div className="rating-block" >
+            {ranges.map((range,index) => score >= range ? (
+                <div className="star-block" key={index}>
                     <img 
-                    key={range.toString()}
+                    //key={range.toString()}
                     className="star"
                     src="/images/red-rating-star.svg"
                     alt=""
-                />
-              </div>
+                    />
+                </div>
             ) : (
-                <div className="star-block">
+                <div className="star-block" key={index}>
                     <img src='/images/rating-star.svg' alt="" className="star"/>
                 </div>
             )
@@ -24,4 +24,5 @@ function Rating({score}){
         </div>
     )
 }
+
 export default Rating

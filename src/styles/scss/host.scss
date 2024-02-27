@@ -1,0 +1,35 @@
+@import 'variables';
+
+.host-block{
+    display: flex;
+    //width: 135.5px;
+    //height: 33px;
+    gap: 10px;
+    align-items: center;
+    & .host-image{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    & img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        @media (min-width: 1024px) {  
+            width: 64px;
+            height: 64px;
+        }
+    } 
+    & .host-name{
+        width: min-content;
+        text-align: right;
+    }
+    & p{
+        color: $primary;
+        @include text-12-500-17;
+        @media (min-width: 1024px) {  
+            font-size: 18px; 
+            line-height: 25px;
+        }
+    }   
+}

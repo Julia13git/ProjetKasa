@@ -12,8 +12,8 @@ function HousingCard() {
             <>
                 <Header/>
                     <div className="home-maincontainer">
-                        <Carousel id={id}/>
-                        <HousingItems id={id}/>
+                        <Carousel id={id} />
+                        <HousingItems id={id} />
                     </div>
                 <Footer/>
             </>

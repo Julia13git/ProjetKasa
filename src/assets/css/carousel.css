@@ -1,3 +1,4 @@
+/*Variables-colors*/
 section {
   position: relative;
   display: flex;
@@ -34,13 +35,13 @@ section p {
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    color: white;
+    color: #FFF;
   }
 }
 section i {
   position: absolute;
   font-size: 24px;
-  color: white;
+  color: #FFF;
   padding-inline: 10px;
   cursor: pointer;
 }

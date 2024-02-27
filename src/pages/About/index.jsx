@@ -7,7 +7,7 @@ import CollapseList from "../../components/CollapseList";
 function About ()  {
     return (
       <>
-      <Header />
+      <Header isAProposActive={true}/>
       <div className="home-maincontainer">
       <Banner image="/images/banner-apropos.svg" title=""/> 
       <CollapseList />   

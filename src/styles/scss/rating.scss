@@ -1,0 +1,22 @@
+.rating-block{
+    display: flex;
+}
+.star-block{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1024px) {  
+        width: 36px;
+        height: 36px;
+    }
+}
+.star{
+    width: 13px;
+    height: 13px;
+    @media (min-width: 1024px) {  
+    width: 24px;
+    height: 24px;
+    }
+}
