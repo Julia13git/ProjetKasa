@@ -11,12 +11,12 @@ body {
     display: flex;
     align-items: center;
 }
-h1{
-  font-family: Montserrat, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;  
-}
+ h1{
+   font-family: Montserrat, sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 24px;  
+ }
 #root{
   display: flex;
   width: 100%;
@@ -34,6 +34,9 @@ h1{
   padding-inline: 20px;
   max-width: 1240px;
   //margin: auto;
+  @media (min-width: 768px) {
+    padding-inline: 50px;
+  }
   @media (min-width: 1024px) {
     padding-inline: 100px;
    }

@@ -1,9 +1,9 @@
-@import '../../styles/scss/variables.scss';
+@import '../../../styles/scss/variables.scss';
 
 .card-layout{
     display: flex;
     flex-direction: column;
-    @media (min-width: 1024px) {  
+    @media (min-width: 768px) {  
         flex-direction: row;
         justify-content: space-between;
     }
@@ -47,7 +47,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    @media (min-width: 1024px) { 
+    @media (min-width: 768px) { 
     flex-direction: column-reverse;
     align-items: flex-end;
     }
@@ -58,6 +58,10 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 25px;
+    @media (min-width: 768px) {  
+        flex-direction: row;
+        gap: 50px;
+    }
     @media (min-width: 1024px) {  
         flex-direction: row;
         gap: 100px;

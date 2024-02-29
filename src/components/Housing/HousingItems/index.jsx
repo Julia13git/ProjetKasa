@@ -1,12 +1,13 @@
 import React from "react";
-import { housingList } from "../../datas/housingList";
-import "./housingitem.scss";
-import Tag from "../Tag";
-import Rating from "../Rating";
-import Host from "../Host";
-import Collapse from "../Collapse";
+import { housingList } from "../../../datas/housingList";
 import { Navigate } from "react-router-dom";
-import Carousel from "../../components/Carousel";
+import "./housingitem.scss";
+import Tag from "../../Tag";
+import Rating from "../../Rating";
+import Host from "../../Host";
+import Collapse from "../../Collapse";
+
+import Carousel from "../../Carousel";
 
 function HousingItems({ id }) {
   const isHouseFound = housingList.find((h) => h.id === id);
