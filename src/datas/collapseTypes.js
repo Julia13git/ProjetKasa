@@ -1,7 +1,4 @@
-import "../Collapse/collapse.scss";
-import Collapse from "../Collapse";
-
-const collapseTypes = [
+export const collapseTypes = [
   {
     title: "Fiabilité",
     content:
@@ -23,21 +20,3 @@ const collapseTypes = [
       "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   },
 ];
-
-function CollapseList() {
-  return (
-    <div className="collapse-list">
-      {collapseTypes.map((collapse) => {
-        return (
-          <Collapse
-            key={collapse.title}
-            title={collapse.title}
-            content={collapse.content}
-          />
-        );
-      })}
-    </div>
-  );
-}
-
-export default CollapseList;

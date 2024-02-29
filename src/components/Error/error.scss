@@ -3,15 +3,21 @@
 .error-block{
 display: flex;
 flex-direction: column;
-gap: 100px;
+gap: 113px;
 padding-bottom: 100px;
 padding-top: 100px;
+@media (min-width: 1024px) {
+    gap: 139px;
+}
 }
 .oups{
-    width: 260px;
     display: flex;
     text-align: center;
-    height: 52px;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
 }
 
 span {
@@ -20,16 +26,26 @@ span {
     font-size: 96px;
     font-weight: 700;
     line-height: 137px;
-    letter-spacing: 0em;
     text-align: center;
+    @media (min-width: 1024px) {
+        font-size: 288px;
+        line-height: 411px;
+    }
 }
 
 h2{
     @include text-18-500-26;
     color: $primary;
+    @media (min-width: 1024px) {
+        font-size: 36px;
+        line-height: 51px;
+    }
 }
 
 a{
     @include text-14-500-20;
     color: $black;
+    @media (min-width: 1024px) {
+        @include text-18-500-26;
+    }
 }

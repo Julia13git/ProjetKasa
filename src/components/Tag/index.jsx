@@ -1,12 +1,11 @@
-import React from "react"
-import './tag.scss'
+import React from "react";
+import "./tag.scss";
 
-
-function Tag({tag}){
-    return (
-        <div>
-             <button className="tagstyle">{tag}</button>
-        </div>
-    )
+function Tag({ tag }) {
+  return (
+    <div>
+      <button className="tagstyle">{tag}</button>
+    </div>
+  );
 }
-export default Tag
+export default Tag;
