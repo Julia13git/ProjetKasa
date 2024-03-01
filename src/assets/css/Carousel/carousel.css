@@ -1,0 +1,64 @@
+/*Variables-colors*/
+section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  section {
+    justify-content: center;
+  }
+}
+section img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  section img {
+    height: 415px;
+    border-radius: 25px;
+  }
+}
+section p {
+  display: none;
+}
+@media (min-width: 1024px) {
+  section p {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #FFF;
+  }
+}
+section i {
+  position: absolute;
+  font-size: 24px;
+  color: #FFF;
+  padding-inline: 10px;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  section i {
+    font-size: 46px;
+  }
+}
+
+.fa-chevron-left {
+  position: absolute;
+  left: 0px;
+}
+
+.fa-chevron-right {
+  position: absolute;
+  right: 0px;
+}
+
+/*# sourceMappingURL=carousel.css.map */

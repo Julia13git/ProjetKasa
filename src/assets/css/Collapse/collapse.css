@@ -1,0 +1,125 @@
+/*Variables-colors*/
+.collapse-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .collapse-list {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+  }
+}
+
+.one-collapse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1023px;
+}
+@media (min-width: 1024px) {
+  .one-collapse {
+    width: 100%;
+  }
+}
+
+.collapse-btn {
+  width: 100%;
+  background: #FF6060;
+  border: none;
+  height: 30px;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+@media (min-width: 1024px) {
+  .collapse-btn {
+    max-width: 1023px;
+    height: 54px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.collapse-content {
+  max-width: 1015px;
+  display: flex;
+  padding: 15px;
+  background: rgba(246, 246, 246, 0.4509803922);
+  border-radius: 0px 0px 10px 10px;
+  opacity: 0;
+  display: none;
+}
+.collapse-content p {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+@media (min-width: 1024px) {
+  .collapse-content p {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+.show-collapse-content {
+  display: flex;
+  animation: show 0.5s ease-in forwards;
+}
+
+.hide-collapse-content {
+  animation: hide 0.5s ease-out forwards;
+}
+
+.rotate-down {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(-180deg);
+}
+
+.rotate-up {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(0deg);
+}
+
+@keyframes show {
+  from {
+    display: none; /* Start with no scale */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    display: block; /* Scale to 1 */
+    opacity: 1; /* Opacity 1 */
+  }
+}
+@keyframes hide {
+  from {
+    display: block;
+    opacity: 1; /* Opacity 1 */
+  }
+  to {
+    display: none; /* Start with no scale */
+    opacity: 0; /* Start with opacity 0 */
+  }
+}
+
+/*# sourceMappingURL=collapse.css.map */

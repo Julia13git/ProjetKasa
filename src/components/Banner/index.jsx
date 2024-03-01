@@ -1,4 +1,5 @@
-import "./banner.scss";
+//import "./banner.scss";
+import "../../assets/css/Banner/banner.css";
 import React from "react";
 
 function Banner({ image, title }) {

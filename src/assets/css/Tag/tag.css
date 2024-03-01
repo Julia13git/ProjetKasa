@@ -1,0 +1,20 @@
+/*Variables-colors*/
+.tagstyle {
+  border: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #FF6060;
+  color: #FFF;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+}
+@media (min-width: 1024px) {
+  .tagstyle {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=tag.css.map */

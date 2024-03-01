@@ -1,0 +1,87 @@
+/*Variables-colors*/
+.card-layout {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .card-layout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.title-location-tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.housing-info {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.housing-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #FF6060;
+}
+@media (min-width: 1024px) {
+  .housing-title {
+    font-size: 36px;
+    line-height: 51px;
+  }
+}
+
+.housing-location {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+@media (min-width: 1024px) {
+  .housing-location {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.tag-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.rating-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .rating-host {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
+
+.description-equipment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .description-equipment {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+/*# sourceMappingURL=housingitem.css.map */
