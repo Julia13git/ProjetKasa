@@ -8,16 +8,19 @@
         justify-content: space-between;
     }
 }
+
 .title-location-tags{
     display: flex;
     flex-direction: column;
 }
+
 .housing-info{
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .housing-title{
     @include text-18-500-26;
     color: $primary;
@@ -26,6 +29,7 @@
         line-height: 51px;
     }
 }
+
 .housing-location{
     @include text-14-500-20;
         @media (min-width: 1024px) {  
@@ -33,6 +37,7 @@
         line-height: 26px;
     }
 }
+
 .tag-list{
     display: flex;
     gap: 10px;
@@ -40,7 +45,6 @@
     @media (min-width: 1024px) { 
     }
 }
-
 
 .rating-host{
     display: flex;
@@ -63,6 +67,7 @@
         gap: 100px;
     }
 }
+
 ul{
     padding:0;
 }

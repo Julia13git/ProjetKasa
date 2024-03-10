@@ -103,22 +103,22 @@
 
 @keyframes show {
   from {
-    display: none; /* Start with no scale */
-    opacity: 0; /* Start with opacity 0 */
+    display: none;
+    opacity: 0;
   }
   to {
-    display: block; /* Scale to 1 */
-    opacity: 1; /* Opacity 1 */
+    display: block;
+    opacity: 1;
   }
 }
 @keyframes hide {
   from {
     display: block;
-    opacity: 1; /* Opacity 1 */
+    opacity: 1;
   }
   to {
-    display: none; /* Start with no scale */
-    opacity: 0; /* Start with opacity 0 */
+    display: none;
+    opacity: 0;
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./housingitem.scss";
+import "../../../assets/css/Housing/HousingItems/housingitem.css";
 import Tag from "../../Tag";
 import Rating from "../../Rating";
 import Host from "../../Host";
