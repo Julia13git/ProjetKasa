@@ -12,7 +12,6 @@ function Router() {
         <Route path="/about" element={<About />} />
         <Route path="/housing/:id" element={<HousingCard />} />
         <Route path="*" element={<PageError />} />
-        <Route path="/error" element={<PageError />} />
       </Routes>
     </>
   );

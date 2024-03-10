@@ -24,6 +24,7 @@ div .banner-img  {
     }
 }
 }
+
 .banner-cover{
     border-radius: 25px;
     height: 111px;
@@ -36,9 +37,6 @@ div .banner-img  {
        }
 }
 
-div .toto {
-    color: blue;
-}
 div .banner-text{
     display: flex;
     border-radius: 25px;
@@ -52,6 +50,7 @@ div .banner-text{
         height: 223px; 
         justify-content: center;    
     }
+    
 & .banner-title {
     position: absolute;
     color: $white;

@@ -2,11 +2,11 @@ import React from "react";
 import Card from "./Card";
 import HousingItems from "./HousingItems";
 
-function Housing({ src, alt, mode, id }) {
+function Housing({ housing, mode }) {
   if (mode === "card") {
-    return <Card src={src} alt={alt} />;
+    return <Card housing={housing} />;
   } else if (mode === "full") {
-    return <HousingItems id={id} />;
+    return <HousingItems housing={housing} />;
   }
 }
 export default Housing;

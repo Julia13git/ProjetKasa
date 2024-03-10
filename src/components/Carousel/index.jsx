@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { housingList } from "../../datas/housingList";
-import "./carousel.scss";
+import "../../assets/css/Carousel/carousel.css";
+//import "./carousel.scss";
 
 function Carousel({ id }) {
   const [currentImage, setCurrentImage] = useState(0);

@@ -20,6 +20,7 @@
 }
 @media (min-width: 1024px) {
   .oups {
+    gap: 5px;
     flex-direction: row;
   }
 }
@@ -29,13 +30,12 @@ span {
   font-family: Montserrat, sans-serif;
   font-size: 96px;
   font-weight: 700;
-  line-height: 137px;
   text-align: center;
 }
 @media (min-width: 1024px) {
   span {
     font-size: 288px;
-    line-height: 411px;
+    line-height: 250px;
   }
 }
 

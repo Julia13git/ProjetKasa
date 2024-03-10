@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./error.scss";
+import "../../assets/css/Error/error.css";
+//import "./error.scss";
 
 function Error() {
   return (
@@ -8,7 +9,7 @@ function Error() {
       <span>404</span>
 
       <div className="oups">
-        <h2> Oups! La page que</h2>
+        <h2> Oups! La page que </h2>
         <h2> vous demandez n'existe pas.</h2>
       </div>
 

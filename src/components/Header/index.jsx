@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "./header.scss";
+import "../../assets/css/Header/header.css";
+//import "./header.scss";
 
 function Header({ isAccueilActive, isAProposActive }) {
   return (

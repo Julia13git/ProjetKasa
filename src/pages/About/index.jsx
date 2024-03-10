@@ -10,7 +10,7 @@ function About() {
     <>
       <Header isAProposActive={true} />
       <div className="home-maincontainer">
-        <Banner image="/images/banner-apropos.svg" title="" />
+        <Banner image="/images/banner-apropos.svg" />
         {/* <CollapseList /> */}
 
         <div className="collapse-list">

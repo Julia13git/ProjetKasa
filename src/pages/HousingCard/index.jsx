@@ -3,19 +3,20 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { useParams } from "react-router-dom";
 import Housing from "../../components/Housing";
-//import Carousel from "../../components/Carousel";
-//import HousingItems from "../../components/HousingItems";
+import { housingList } from "../../datas/housingList";
+import PageError from "../PageError";
 
 function HousingCard() {
   const { id } = useParams();
-
+  const housing = housingList.find((housing) => housing.id === id);
+  if (!housing) {
+    return <PageError />;
+  }
   return (
     <>
       <Header />
       <div className="home-maincontainer">
-        {/* <Carousel id={id} /> */}
-        {/* <HousingItems id={id} /> */}
-        <Housing id={id} mode="full" />
+        <Housing housing={housing} mode="full" />
       </div>
       <Footer />
     </>

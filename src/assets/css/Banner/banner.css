@@ -43,10 +43,6 @@ div .banner-img img {
   }
 }
 
-div .toto {
-  color: blue;
-}
-
 div .banner-text {
   display: flex;
   border-radius: 25px;
