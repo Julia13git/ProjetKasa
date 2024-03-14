@@ -53,15 +53,17 @@ h2 {
   }
 }
 
-a {
+.error-link {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   color: #000000;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
-  a {
+  .error-link {
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 500;

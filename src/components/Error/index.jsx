@@ -12,7 +12,9 @@ function Error() {
         <h2> vous demandez n'existe pas.</h2>
       </div>
 
-      <Link to="/">Retourner sur la page d’accueil</Link>
+      <Link to="/" className="error-link">
+        Retourner sur la page d’accueil
+      </Link>
     </section>
   );
 }

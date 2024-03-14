@@ -42,9 +42,11 @@ h2{
     }
 }
 
-a{
+.error-link{
     @include text-14-500-20;
     color: $black;
+    display: flex;
+    justify-content: center;
     @media (min-width: 1024px) {
         @include text-18-500-26;
     }

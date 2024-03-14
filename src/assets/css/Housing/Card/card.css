@@ -1,4 +1,13 @@
 /*Variables-colors*/
+a {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  a {
+    width: 30%;
+  }
+}
+
 .onecard {
   display: flex;
   flex-direction: column;
@@ -12,7 +21,7 @@
 }
 @media (min-width: 1024px) {
   .onecard {
-    width: 340px;
+    width: 100%;
     height: 340px;
     margin-bottom: 0px;
   }
@@ -51,6 +60,9 @@
   font-weight: 700;
   line-height: 26px;
   color: #FFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=card.css.map */

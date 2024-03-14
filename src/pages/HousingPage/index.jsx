@@ -6,7 +6,7 @@ import Housing from "../../components/Housing";
 import { housingList } from "../../datas/housingList";
 import PageError from "../PageError";
 
-function HousingCard() {
+function HousingPage() {
   const { id } = useParams();
   const housing = housingList.find((housing) => housing.id === id);
   if (!housing) {
@@ -22,4 +22,4 @@ function HousingCard() {
     </>
   );
 }
-export default HousingCard;
+export default HousingPage;
