@@ -28,6 +28,7 @@ h1 {
 }
 
 .home-maincontainer {
+  width: inherit;
   width: -webkit-fill-available;
   display: flex;
   justify-content: center;
@@ -62,5 +63,3 @@ h1 {
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
