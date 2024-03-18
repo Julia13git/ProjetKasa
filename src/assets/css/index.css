@@ -29,7 +29,7 @@ h1 {
 
 .home-maincontainer {
   width: inherit;
-  width: -webkit-fill-available;
+  width: -webkit-fill-available; /* WebKit-based browsers will ignore this. */
   display: flex;
   justify-content: center;
   flex-direction: column;

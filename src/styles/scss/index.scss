@@ -29,9 +29,8 @@ body {
 }
 
 .home-maincontainer{
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
+  width: inherit;          
+  width: -webkit-fill-available;  /* WebKit-based browsers will ignore this. */
   display: flex; 
   justify-content: center;
   flex-direction: column;
