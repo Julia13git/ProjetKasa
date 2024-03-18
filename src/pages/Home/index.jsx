@@ -1,11 +1,9 @@
 import React from "react";
-//import Card from "../../components/Card";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { housingList } from "../../datas/housingList";
 import Housing from "../../components/Housing";
-//import '../../Card/card.scss'
 
 function Home() {
   return (
